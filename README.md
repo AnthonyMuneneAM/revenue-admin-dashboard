@@ -1,0 +1,1 @@
+This repository contains files for a simple admin dashboard to monitor revenue collections.
