@@ -12,12 +12,12 @@
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
+    <li class="nav-item">
         <a class="nav-link" href="home.php">
         <i class="fa-solid fa-house"></i>
             <span>Dashboard</span></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item active">
         <a class="nav-link" href="department.php">
         <i class="fa-solid fa-network-wired"></i>
             <span>All Departments</span></a>
