@@ -20,7 +20,7 @@
     <!-- FontAwesome kit code -->
     <script src="https://kit.fontawesome.com/c68cdad46b.js" crossorigin="anonymous"></script>
 
-    <!-- google pie chart -->
+    <!-- google charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -48,6 +48,33 @@
 
         chart.draw(data, options);
       }
+    </script>
+
+    <!-- Google Bar Chart -->
+    <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Department', 'Revenue'],
+        ['Parking Management',2080124],
+        ['Land & Urban Planning',11467943],
+        ['Property Management',5877843],
+        ['Social Services',23684934],
+        ['Business Licensing',26993764],
+        ['Border Revenue',    7893244],
+        ['Outdoor Advertisement',    37844644],
+        ['Health Services',    22343974]
+        ]);
+
+        var options = {
+        title:'Revenue by Department'
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+        }
     </script>
 
 </head>
@@ -190,33 +217,20 @@
                             </div>
                         </div>
 
-                        <!-- Area Chart -->
+                        <!-- Revenue Chart -->
                         <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
+                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Overview</h6>
+                                    <div class="dropdown no-arrow"></div>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
+                                    
+                                    <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -264,6 +278,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
