@@ -1,11 +1,11 @@
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+            <i class="fa-solid fa-map"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Jiji County</div>
     </a>
 
     <!-- Divider -->
@@ -13,7 +13,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="home.php">
+        <a class="nav-link" href="index.php">
         <i class="fa-solid fa-house"></i>
             <span>Dashboard</span></a>
     </li>
@@ -45,9 +45,11 @@
         </a>
         <div id="collapseParking" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Parking Zones</a>
+                <a class="collapse-item" href="#">Vehicles</a>
+                <a class="collapse-item" href="#">Daily Parking</a>
+                <a class="collapse-item" href="#">Seasonal Parking</a>
+                <a class="collapse-item" href="#">Reserved Parking</a>
             </div>
         </div>
     </li>
@@ -61,9 +63,24 @@
         </a>
         <div id="collapseLand" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Land Rates</a>
+                <a class="collapse-item" href="#">Transfers</a>
+                <a class="collapse-item" href="#">Surveys</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProperty"
+            aria-expanded="true" aria-controls="collapseProperty">
+            <i class="fa-solid fa-building-user"></i>
+            <span>Property Management</span>
+        </a>
+        <div id="collapseProperty" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="#">Tenancy Application</a>
+                <a class="collapse-item" href="#">Tenancy Transfer</a>
             </div>
         </div>
     </li>
@@ -77,9 +94,10 @@
         </a>
         <div id="collapseSocial" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Hire of Ground</a>
+                <a class="collapse-item" href="#">County Halls</a>
+                <a class="collapse-item" href="#">Facilities</a>
+                <a class="collapse-item" href="#">Equipment</a>
             </div>
         </div>
     </li>
@@ -93,9 +111,9 @@
         </a>
         <div id="collapseBusiness" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Single Business Permits</a>
+                <a class="collapse-item" href="#">Liquor Licensing</a>
+                <a class="collapse-item" href="#">Betting & Games</a>
             </div>
         </div>
     </li>
@@ -109,9 +127,7 @@
         </a>
         <div id="collapseBorder" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Border Revenue</a>
             </div>
         </div>
     </li>
@@ -125,9 +141,9 @@
         </a>
         <div id="collapseOutdoor" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Billboards</a>
+                <a class="collapse-item" href="#">Posters</a>
+                <a class="collapse-item" href="#">Digital</a>
             </div>
         </div>
     </li>
@@ -141,9 +157,9 @@
         </a>
         <div id="collapseHealth" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">Buttons</a>
-                <a class="collapse-item" href="cards.html">Cards</a>
+                <a class="collapse-item" href="#">Ambulance Services</a>
+                <a class="collapse-item" href="#">Health Certificates</a>
+                <a class="collapse-item" href="#">Licenses</a>
             </div>
         </div>
     </li>
