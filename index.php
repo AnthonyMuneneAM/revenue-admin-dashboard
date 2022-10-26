@@ -86,6 +86,7 @@
 
         <!-- Sidebar -->
         <?php
+            session_start();
             include './assets/sidebar.php';
         ?>
         <!-- End of Sidebar -->
@@ -95,7 +96,7 @@
 
             <!-- Main Content -->
             <div id="content">
-
+                
                 <!-- Topbar -->
                 <?php
                     include './assets/topbar.php';
@@ -104,7 +105,20 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    <?php
+                        if(isset($_SESSION['message']))
+                        {
+                    ?>
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <?= $_SESSION['message']; ?>.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                    <?php
+                            unset($_SESSION['message']);
+                        }
+                    ?>
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
